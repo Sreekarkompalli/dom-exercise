@@ -7,19 +7,20 @@ let colorBg=document.getElementById('color-overlay');
 colorBg.style.backgroundColor=generateRandomColor();
 }
 
-function ChangeBgtext(){
-    let textBg=document.getElementById('one');
+function ChangeBgText(){
+    let textBg = document.getElementById('one');
+    console.log(textBg);
 if(textBg.innerHTML=='ON THE FLOOR BABY')
-  textBg.innerHTML=='HIT IT HARD BABY';
+  textBg.innerHTML='HIT IT HARD BABY';
 else if(textBg.innerHTML=='HIT IT HARD BABY')
-textBg.innerHTML=='ROCK THE PARTY BABY';
+textBg.innerHTML='ROCK THE PARTY BABY';
 else if(textBg.innerHTML=='ROCK THE PARTY BABY')
-textBg.innerHTML=='ON THE FLOOR BABY'
+textBg.innerHTML='ON THE FLOOR BABY'
 }
 
 function checkBg(){
     generateRandomColor();
     changeBackgroundColor();
-    ChangeBgtext();
+    ChangeBgText();
 }
-setInterval(checkbg,500);
+setInterval(checkBg,500);
